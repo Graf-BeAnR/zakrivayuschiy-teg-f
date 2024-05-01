@@ -4,3 +4,66 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+	--background-color: #fff;
+	--accent-color: #000000;
+	--button-difference: #fff;
+	--main-weight: 400;
+	--title-weight: 700;
+	--background-image: repeating-linear-gradient(
+			to right,
+			#d3d3d3 2px,
+			transparent 2px
+		),
+		repeating-linear-gradient(to bottom, #e7e7e7 2px, transparent 2px),
+		linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background-color: #fff;
+		--accent-color: #000000;
+		--button-difference: #fff;
+		--main-weight: 400;
+		--title-weight: 700;
+		--background-image: repeating-linear-gradient(
+				to right,
+				#d3d3d3 2px,
+				transparent 2px
+			),
+			repeating-linear-gradient(to bottom, #e7e7e7 2px, transparent 2px),
+			linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+	}
+}
+
+:root.theme-dark {
+	--background-color: #000000;
+	--accent-color: #00cc14;
+	--button-difference: #00cc14;
+	--main-weight: 465;
+	--title-weight: 785;
+	--background-image: repeating-linear-gradient(
+			to right,
+			#000 2px,
+			transparent 2px
+		),
+		repeating-linear-gradient(to bottom, #007f0c 2px, #004306 2px),
+		linear-gradient(to bottom, #007f0c, #004306);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #000000;
+		--accent-color: #00cc14;
+		--button-difference: #00cc14;
+		--main-weight: 465;
+		--title-weight: 785;
+		--background-image: repeating-linear-gradient(
+				to right,
+				#000 2px,
+				transparent 2px
+			),
+			repeating-linear-gradient(to bottom, #007f0c 2px, transparent 2px),
+			linear-gradient(to bottom, #007f0c, #004306);
+	}
+}
