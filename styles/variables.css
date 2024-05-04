@@ -1,29 +1,35 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-	--main-font: Inter-Variable;
-	--accent-font: PressStart2P-Regular;
+	--main-font: 'Inter-Variable', sans-serif;
+	--accent-font: 'PressStart2P', fantasy;
 	--main-weight: 400;
-	--title-weight: 700;
+	--title-weight: 785;
 	--sparks: #ff0000;
 	--background-color: #fff;
 	--button-difference: #fff;
 	--accent-color: #000000;
-	/* Градиент */
+	--color-heart-contour: #000;
+	--color-hover-heart: #000;
+	--gradient-background: #d3d3d3;
+	--gradient-first: #e7e7e7;
+	--gradient-second: #1a1a1a;
 
-	/* --repeating-linear-gradient-color: #d3d3d3;
-	--linear-gradient-color-from: #e7e7e7;
-	--linear-gradient-color-to: #1a1a1a; */
-	/* --background-image: repeating-linear-gradient(
-			to right,
-			var(--repeating-linear-gradient-color) 0px 2px,
-			transparent 2px 4px
-		),
-		repeating-linear-gradient(
-			var(--repeating-linear-gradient-color) 0px 2px,
-			transparent 2px 4px
-		),
-		linear-gradient(
-			var(--linear-gradient-color-from) 0.01%,
-			var(--linear-gradient-color-to) 100%
-		); */
+	--gradient-lineX: repeating-linear-gradient(
+		to right,
+		var(--gradient-background) 0 2px,
+		transparent 2px 4px
+	);
+	--gradient-lineY: repeating-linear-gradient(
+		to bottom,
+		var(--gradient-background) 0 2px,
+		transparent 2px 4px
+	);
+	--gradient-lineZ: repeating-linear-gradient(
+		to bottom,
+		var(--gradient-first, #e7e7e7) 0.01%,
+		var(--gradient-second, #1a1a1a) 100%
+	);
+
+	--gradient-pattern: var(--gradient-lineX), var(--gradient-lineY),
+		var(--gradient-lineZ);
 }

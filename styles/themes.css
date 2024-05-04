@@ -10,13 +10,12 @@
 	--button-difference: #fff;
 	--main-weight: 400;
 	--title-weight: 700;
-	--background-image: repeating-linear-gradient(
-			to right,
-			#d3d3d3 2px,
-			transparent 2px
-		),
-		repeating-linear-gradient(to bottom, #e7e7e7 2px, transparent 2px),
-		linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+	--text-color: #000000;
+	--color-heart-contour: #000;
+	--color-hover-heart: #000;
+	--gradient-background: #d3d3d3;
+	--gradient-first: #e7e7e7;
+	--gradient-second: #1a1a1a;
 }
 
 @media (prefers-color-scheme: light) {
@@ -26,13 +25,12 @@
 		--button-difference: #fff;
 		--main-weight: 400;
 		--title-weight: 700;
-		--background-image: repeating-linear-gradient(
-				to right,
-				#d3d3d3 2px,
-				transparent 2px
-			),
-			repeating-linear-gradient(to bottom, #e7e7e7 2px, transparent 2px),
-			linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+		--text-color: #000000;
+		--color-heart-contour: #000;
+		--color-hover-heart: #000;
+		--gradient-background: #d3d3d3;
+		--gradient-first: #e7e7e7;
+		--gradient-second: #1a1a1a;
 	}
 }
 
@@ -40,15 +38,14 @@
 	--background-color: #000000;
 	--accent-color: #00cc14;
 	--button-difference: #00cc14;
+	--text-color: #00cc14;
 	--main-weight: 465;
 	--title-weight: 785;
-	--background-image: repeating-linear-gradient(
-			to right,
-			#000 2px,
-			transparent 2px
-		),
-		repeating-linear-gradient(to bottom, #007f0c 2px, #004306 2px),
-		linear-gradient(to bottom, #007f0c, #004306);
+	--color-heart-contour: #00cc14;
+	--color-hover-heart: #00cc14;
+	--gradient-background: #000;
+	--gradient-first: #007f0c;
+	--gradient-second: #004306;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,12 +55,11 @@
 		--button-difference: #00cc14;
 		--main-weight: 465;
 		--title-weight: 785;
-		--background-image: repeating-linear-gradient(
-				to right,
-				#000 2px,
-				transparent 2px
-			),
-			repeating-linear-gradient(to bottom, #007f0c 2px, transparent 2px),
-			linear-gradient(to bottom, #007f0c, #004306);
+		--text-color: #00cc14;
+		--color-heart-contour: #00cc14;
+		--color-hover-heart: #00cc14;
+		--gradient-background: #000;
+		--gradient-first: #007f0c;
+		--gradient-second: #004306;
 	}
 }
