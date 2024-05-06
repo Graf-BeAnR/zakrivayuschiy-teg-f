@@ -37,7 +37,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: clamp(7.5rem, 6.3462rem + 4.9231vw, 8.5rem) 0 20px;
+	padding: clamp(7.5rem, 6.3462rem + 4.9231vw, 8.5rem) 0 0;
 	font-family: var(--accent-font, PressStart2P), fantasy;
 	text-transform: uppercase;
 	border: 2px solid var(--accent-color, #000000);
@@ -370,14 +370,16 @@
 	block-size: 28px;
 }
 
-.modal__icon {
+.button__icon__popup {
+	color: var(--button-difference, #fff);
+	mix-blend-mode: difference;
 	inline-size: 39px;
 	block-size: 39px;
 }
 
 .dialog-popup {
 	min-inline-size: 341px;
-	padding: 30px;
+	padding: 30px 42px;
 	border: 2px solid var(--accent-color, #000000);
 	font-family: var(--accent-font, PressStart2P), fantasy;
 	line-height: 150%;
@@ -393,6 +395,7 @@ dialog::backdrop {
 
 .popup__button {
 	inline-size: 100%;
+	margin-bottom: 0px;
 }
 
 .dialog-popup[open] {
@@ -409,18 +412,22 @@ dialog::backdrop {
 
 .modal-popup {
 	display: flex;
-	max-inline-size: 293px;
+	min-inline-size: 257px;
 	gap: 20px;
 	align-items: center;
 }
 
 @media (width > 500px) {
+	.header {
+		max-height: 364px;
+	}
+
 	.header__conteiner {
 		max-inline-size: 696px;
 	}
 
 	.dialog-popup {
-		max-inline-size: 357px;
+		inline-size: 353px;
 		padding: 30px;
 	}
 
