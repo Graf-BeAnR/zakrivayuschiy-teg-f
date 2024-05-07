@@ -418,10 +418,6 @@ dialog::backdrop {
 }
 
 @media (width > 500px) {
-	.header {
-		max-height: 364px;
-	}
-
 	.header__conteiner {
 		max-inline-size: 696px;
 	}
